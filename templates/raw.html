@@ -3,42 +3,73 @@
 
 {% block content %}
 
-<div class="page-header">
-    <h1>Raw data</h1>
+<div class="container page-header">
+    <div class="row row-content">
+        <h1>Odpowiedzi uzyskane od ankietowanych</h1>
+    </div>
 </div>
 
-<table class="table">
-    <thead>
-    <tr>
-        <th>#</th>
-        <th>Created at</th>
-        <th>First Name</th>
-        <th>Email</th>
-        <th>Age</th>
-        <th>Income</th>
-        <th>Satisfaction</th>
-        <th>Python</th>
-        <th>Flask</th>
-    </tr>
-    </thead>
+<div class="container">
+    <div class="table-responsive">
+        <table class="table">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Created at</th>
+            <th>First Name</th>
+            <th>Status</th>
+            <th>Uczelnia</th>
+            <th>Typ studiów</th>
+            <th>Kierunek studiów</th>
+            <th>Rodzaj studiów</th>
+            <th>Tytuł naukowy</th>
+            <th>Pytanie 1</th>
+            <th>Pytanie 2</th>
+            <th>Pytanie 3</th>
+            <th>Pytanie 4</th>
+            <th>Pytanie 5</th>
+            <th>Pytanie 6</th>
+            <th>Pytanie 7</th>
+            <th>Pytanie 8</th>
+            <th>Pytanie 9</th>
+            <th>Pytanie 10</th>
+            <th>Pracuje?</th>
+            <th>Ile godzin tygodniowo</th>
+            <th>Dochód</th>
+            <th>Uczelnia pomogła w znalezieniu pracy?</th>
+        </tr>
+        </thead>
 
-    <tbody>
-    {% for element in formdata %}
-    <tr>
-        <td>{{ element.id }}</td>
-        <td>{{ element.created_at }}</td>
-        <td>{{ element.firstname }}</td>
-        <td>{{ element.email }}</td>
-        <td>{{ element.age }}</td>
-        <td>{{ element.income }}</td>
-        <td>{{ element.satisfaction }}</td>
-        <td>{{ element.q1 }}</td>
-        <td>{{ element.q2 }}</td>
-
-    </tr>
-    {% endfor %}
-    </tbody>
-</table>
-
-
+        <tbody>
+        {% for element in formdata %}
+        <tr>
+            <td>{{ element.id }}</td>
+            <td>{{ element.created_at }}</td>
+            <td>{{ element.firstname }}</td>
+            <td>{{ element.status}}</td>
+            <td>{{ element.university }}</td>
+            <td>{{ element.type }}</td>
+            <td>{{ element.field_study}}</td>
+            <td>{{ element.study_degree}}</td>
+            <td>{{ element.degree}}</td>
+            <td>{{ element.question1}}</td>
+            <td>{{ element.question2}}</td>
+            <td>{{ element.question3}}</td>
+            <td>{{ element.question4}}</td>
+            <td>{{ element.question5}}</td>
+            <td>{{ element.question6}}</td>
+            <td>{{ element.question7}}</td>
+            <td>{{ element.question8}}</td>
+            <td>{{ element.question9}}</td>
+            <td>{{ element.question10}}</td>
+            <td>{{ element.work}}</td>
+            <td>{{ element.hours}}</td>
+            <td>{{ element.income}}</td>
+            <td>{{ element.uni_help}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+        </table>
+    </div>
+</div>
 {% endblock %}
