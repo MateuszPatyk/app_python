@@ -12,8 +12,8 @@
     <div class="form-group">
         <label for="firstname">Podaj swoje imię:</label>
         <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Wprowadź imię" required>
-        <label for="age">Podaj ile masz lat:</label>
-        <input type="number" class="form-control" id="age" name="age" min="16" max="100"  placeholder="Wprowadz liczbę" required>
+        <label for="age">Ile masz lat:</label>
+        <input type="number" class="form-control" id="age" name="age" min="16" max="100"  placeholder="Wprowadź liczbę" required>
     </div>
 
     <div class="form-group">
@@ -23,7 +23,7 @@
             <option>absolwent</option>
         </select>
         <label for="university">Na jakiej uczelni studiujesz?</label>
-        <select class="form-control" id="university" name="university">
+        <select class="form-control" id="status" name="university">
             <option>AGH</option>
             <option>PK</option>
             <option>UJ</option>
@@ -76,181 +76,181 @@
         <b>Określ stopień zadowolenia ze swoich studiów:</b>
         <div class="form-group">
             <label class="radio-inline">
-              <input type="radio" name="question1" value="1">1
+              <input type="radio" name="question1" value="1"> 1
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question1" value="2">2
+              <input type="radio" name="question1" value="2"> 2
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question1" value="3" checked>3
+              <input type="radio" name="question1" value="3" checked> 3
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question1" value="4">4
+              <input type="radio" name="question1" value="4"> 4
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question1" value="5">5
+              <input type="radio" name="question1" value="5"> 5
             </label>
         </div>
-        <b>Oceń jak wartościowe było kształcenie na przedmiotach kierunkowych w czasie twoich studiów:</b>
+        <b>Oceń, w skali 1-5, jak wartościowe było kształcenie na przedmiotach kierunkowych w czasie twoich studiów:</b>
         <div class="form-group">
             <label class="radio-inline">
-              <input type="radio" name="question2" value="1">1
+              <input type="radio" name="question2" value="1"> 1
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question2" value="2">2
+              <input type="radio" name="question2" value="2"> 2
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question2" value="3" checked>3
+              <input type="radio" name="question2" value="3" checked> 3
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question2" value="4">4
+              <input type="radio" name="question2" value="4"> 4
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question2" value="5">5
+              <input type="radio" name="question2" value="5"> 5
             </label>
         </div>
         <b>Określ stopień powiązania odbywanych kursów z kierunkiem twoich studiów:</b>
         <div class="form-group">
             <label class="radio-inline">
-              <input type="radio" name="question3" value="1">1
+              <input type="radio" name="question3" value="1"> 1
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question3" value="2">2
+              <input type="radio" name="question3" value="2"> 2
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question3" value="3" checked>3
+              <input type="radio" name="question3" value="3" checked> 3
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question3" value="4">4
+              <input type="radio" name="question3" value="4"> 4
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question3" value="5">5
-            </label>
-        </div>
-        <b>Czy wiedza, którą nabywasz podczas kursów wydaje Ci się praktyczna i przydatna?</b>
-        <div class="form-group">
-            <label class="radio-inline">
-              <input type="radio" name="question4" value="1">1
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="question4" value="2">2
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="question4" value="3" checked>3
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="question4" value="4">4
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="question4" value="5">5
+              <input type="radio" name="question3" value="5"> 5
             </label>
         </div>
-        <b>Czy uczelnia jest pomocna w rozwoju Twojej kariery zawodowej?</b>
+        <b>Czy wiedza, którą nabywasz podczas kursów wydaje Ci się praktyczna i przydatna? W jakim stopniu zgadzasz się z tym stwierdzeniem, w skali 1-5?</b>
         <div class="form-group">
             <label class="radio-inline">
-              <input type="radio" name="question5" value="1">1
+              <input type="radio" name="question4" value="1"> 1
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question5" value="2">2
+              <input type="radio" name="question4" value="2"> 2
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question5" value="3" checked>3
+              <input type="radio" name="question4" value="3" checked> 3
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question5" value="4">4
+              <input type="radio" name="question4" value="4"> 4
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question5" value="5">5
+              <input type="radio" name="question4" value="5"> 5
             </label>
         </div>
-        <b>Czy poleciłbyś swój kierunek innej osobie?</b>
+        <b>Czy uczelnia jest pomocna w rozwoju Twojej kariery zawodowej? Oceń w skali 1-5.</b>
         <div class="form-group">
             <label class="radio-inline">
-              <input type="radio" name="question6" value="1">1
+              <input type="radio" name="question5" value="1"> 1
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question6" value="2">2
+              <input type="radio" name="question5" value="2"> 2
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question6" value="3" checked>3
+              <input type="radio" name="question5" value="3" checked> 3
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question6" value="4">4
+              <input type="radio" name="question5" value="4"> 4
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question6" value="5">5
+              <input type="radio" name="question5" value="5"> 5
             </label>
         </div>
-        <b>Czy wymagania stawiane przez pracodawców pokrywają się z zakresem wiedzy i umiejętności, który zdobywasz w trakcie studiów?</b>
+        <b>Czy poleciłbyś swój kierunek innej osobie? W jakim stopniu zgadzasz się z tym stwierdzeniem, w skali 1-5?</b>
         <div class="form-group">
             <label class="radio-inline">
-              <input type="radio" name="question7" value="1">1
+              <input type="radio" name="question6" value="1"> 1
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question7" value="2">2
+              <input type="radio" name="question6" value="2"> 2
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question7" value="3" checked>3
+              <input type="radio" name="question6" value="3" checked> 3
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question7" value="4">4
+              <input type="radio" name="question6" value="4"> 4
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question7" value="5">5
+              <input type="radio" name="question6" value="5"> 5
             </label>
         </div>
-        <b>Czy prowadzący zajęcia wskazują jakie umiejętności mogą być przydatne na rynku pracy?</b>
+        <b>Czy wymagania stawiane przez pracodawców pokrywają się z zakresem wiedzy i umiejętności, który zdobywasz w trakcie studiów? Oceń w skali 1-5.</b>
         <div class="form-group">
             <label class="radio-inline">
-              <input type="radio" name="question8" value="1">1
+              <input type="radio" name="question7" value="1"> 1
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question8" value="2">2
+              <input type="radio" name="question7" value="2"> 2
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question8" value="3" checked>3
+              <input type="radio" name="question7" value="3" checked> 3
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question8" value="4">4
+              <input type="radio" name="question7" value="4"> 4
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question8" value="5">5
+              <input type="radio" name="question7" value="5"> 5
             </label>
         </div>
-        <b>Czy prowadzący zajęcia wskazują jakie dodatkowe kursy poza uczelnią należy podjąć by zwiększyć swoje szanse na rynku pracy?</b>
+        <b>Czy prowadzący zajęcia wskazują jakie umiejętności mogą być przydatne na rynku pracy? W jakim stopniu zgadzasz się z tym stwierdzeniem, w skali 1-5?</b>
         <div class="form-group">
             <label class="radio-inline">
-              <input type="radio" name="question9" value="1">1
+              <input type="radio" name="question8" value="1"> 1
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question9" value="2">2
+              <input type="radio" name="question8" value="2"> 2
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question9" value="3" checked>3
+              <input type="radio" name="question8" value="3" checked> 3
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question9" value="4">4
+              <input type="radio" name="question8" value="4"> 4
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question9" value="5">5
+              <input type="radio" name="question8" value="5"> 5
             </label>
         </div>
-        <b>Czy studiowanie jest według Ciebie przyjemne?</b>
+        <b>Czy prowadzący zajęcia wskazują jakie dodatkowe kursy poza uczelnią należy podjąć by zwiększyć swoje szanse na rynku pracy? W jakim stopniu zgadzasz się z tym stwierdzeniem, w skali 1-5?</b>
         <div class="form-group">
             <label class="radio-inline">
-              <input type="radio" name="question10" value="1">1
+              <input type="radio" name="question9" value="1"> 1
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question10" value="2">2
+              <input type="radio" name="question9" value="2"> 2
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question10" value="3" checked>3
+              <input type="radio" name="question9" value="3" checked> 3
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question10" value="4">4
+              <input type="radio" name="question9" value="4"> 4
             </label>
             <label class="radio-inline">
-              <input type="radio" name="question10" value="5">5
+              <input type="radio" name="question9" value="5"> 5
+            </label>
+        </div>
+        <b>Czy studiowanie jest według Ciebie przyjemne? Oceń w skali 1-5.</b>
+        <div class="form-group">
+            <label class="radio-inline">
+              <input type="radio" name="question10" value="1"> 1
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="question10" value="2"> 2
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="question10" value="3" checked> 3
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="question10" value="4"> 4
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="question10" value="5"> 5
             </label>
         </div>
     </div>
@@ -261,9 +261,9 @@
             <option>Nie</option>
         </select>
         <label for="hours">Jeśli tak, to ile godzin tygodniowo?</label>
-        <input type="number" class="form-control" id="hours" name="hours" min="0" max="100"  placeholder="Wprowadz liczbę godzin" required>
+        <input type="number" class="form-control" id="hours" name="hours" min="0" max="100"  placeholder="Wprowadz liczbę godzin">
         <label for="income">Jeśli pracujesz, to ile zarabiasz?</label>
-        <input type="number" class="form-control" id="income" name="income" min="0" max="10000"  placeholder="Wprowadz kwotę w zł" required>
+        <input type="number" class="form-control" id="income" name="income" min="0" max="10000"  placeholder="Wprowadz kwotę w PLN">
         <label for="uni_help">Jeśli pracujesz, to czy znalazłeś pracę za pomocą uczelni?</label>
         <select class="form-control" id="uni_help" name="uni_help">
             <option>Tak</option>
@@ -271,7 +271,7 @@
         </select>
     </div>
 
-    <button type="submit" class="btn btn-block btn-primary btn-lg">Wyślij formularz</button>
+    <button type="submit">Wyślij formularz</button>
 </form>
 
 {% endblock %}
