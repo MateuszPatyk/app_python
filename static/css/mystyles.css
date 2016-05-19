@@ -34,7 +34,6 @@
 }
 
 #link p > a:hover{
-    color: #181818;
     color: #4d4d4d;
 }
 
@@ -52,8 +51,6 @@
     color: #4d4d4d;
 }
 
-
-
 table{
      border-color: red;
 }
@@ -69,9 +66,79 @@ th, td{
     text-align: center;
 }
 
+form{
+    font-size: 18px;
+
+}
+
+form > div.form-group > input{
+    width: 250px;
+    height: 40px;
+    margin: 5px 0px 8px 0px;
+    border-color: #b3b3b3;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+form > div.form-group > input:focus{
+    background-color: #d8ecf3;
+    color: #303030;
+
+}
+
+form > div.form-group > select{
+    width: 250px;
+    height: 40px;
+    margin: 5px 0px 8px 0px;
+    border-color: #b3b3b3;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+form > div.form-group > select:focus{
+    background-color: #d8ecf3;
+    color: #303030;
+
+}
+
+input[type=radio]{
+    height: 20px;
+    width: 20px;
+}
+
+label.radio-inline{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+form > div.form-group > b{
+    font-size: 18px;
+}
+
+form > h3{
+    font-size: 30px;
+    padding-bottom: 5px;
+    padding-top: 30px;
+}
+
+form{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button[type=submit]{
+    width: 250px;
+    height: 40px;
+    background-color: #303030;
+    color: aliceblue;
+    border-color: #303030;
+    border-radius: 6px;
+}
+
 body{
     padding: 50px 0px 0px 0px;
     z-index: 0;
     background-color: aliceblue;
-    
 }
