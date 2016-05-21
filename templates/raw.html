@@ -3,7 +3,7 @@
 
 {% block content %}
 
-<div class="container page-header">
+<div class="page-header">
     <div class="row row-content">
         <h1>Odpowiedzi uzyskane od ankietowanych</h1>
     </div>
@@ -16,7 +16,8 @@
         <tr>
             <th>#</th>
             <th>Created at</th>
-            <th>First Name</th>
+            <th>Imię</th>
+            <th>Wiek</th>
             <th>Status</th>
             <th>Uczelnia</th>
             <th>Typ studiów</th>
@@ -36,7 +37,6 @@
             <th>Pracuje?</th>
             <th>Ile godzin tygodniowo</th>
             <th>Dochód</th>
-            <th>Uczelnia pomogła w znalezieniu pracy?</th>
         </tr>
         </thead>
 
@@ -46,6 +46,7 @@
             <td>{{ element.id }}</td>
             <td>{{ element.created_at }}</td>
             <td>{{ element.firstname }}</td>
+            <td>{{ element.age }}</td>
             <td>{{ element.status}}</td>
             <td>{{ element.university }}</td>
             <td>{{ element.type }}</td>
@@ -65,7 +66,6 @@
             <td>{{ element.work}}</td>
             <td>{{ element.hours}}</td>
             <td>{{ element.income}}</td>
-            <td>{{ element.uni_help}}</td>
         </tr>
         {% endfor %}
         </tbody>

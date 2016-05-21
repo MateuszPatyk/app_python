@@ -29,6 +29,7 @@
             <option>UJ</option>
             <option>UR</option>
             <option>AWF</option>
+            <option>UEK</option>
             <option>inna</option>
         </select>
         <label for="type">Typ studiów:</label>
@@ -40,13 +41,14 @@
         </select>
         <label for="field_study">Jaki kierunek studiów wybrałeś?</label>
         <input type="text" class="form-control" id="field_study" name="field_study" placeholder="Wprowadź nazwę kierunku" required>
-        <label for="study_degree">Wybiersz stopień studiów, które ukończyłeś/zamierzasz ukończyć:</label>
+        <label for="study_degree">Wybierz stopień studiów, które ukończyłeś/zamierzasz ukończyć:</label>
         <select class="form-control" id="study_degree" name="study_degree">
             <option>licencjackie</option>
             <option>inżynierskie</option>
             <option>magisterskie</option>
+            <option>doktoranckie</option>
         </select>
-        <label for="degree">Czy posiadasz już jakiś tytuł?</label>
+        <label for="degree">Czy posiadasz już jakiś tytuł naukowy?</label>
         <select class="form-control" id="degree" name="degree">
             <option>licencjat</option>
             <option>inżynier</option>
@@ -54,7 +56,7 @@
             <option>magister inżynier</option>
             <option>nie posiadam</option>
         </select>
-        <b>Podaj przybliżoną średnią ocen z dotychczasowego okresu studiów</b>
+        <b>Podaj przybliżoną średnią ocen z dotychczasowego okresu studiów:</b>
         <div class="form-group">
         <label class="radio-inline">
           <input type="radio" name="average" value="1">3.0 - 3.5
@@ -264,11 +266,6 @@
         <input type="number" class="form-control" id="hours" name="hours" min="0" max="100"  placeholder="Wprowadz liczbę godzin">
         <label for="income">Jeśli pracujesz, to ile zarabiasz?</label>
         <input type="number" class="form-control" id="income" name="income" min="0" max="10000"  placeholder="Wprowadz kwotę w PLN">
-        <label for="uni_help">Jeśli pracujesz, to czy znalazłeś pracę za pomocą uczelni?</label>
-        <select class="form-control" id="uni_help" name="uni_help">
-            <option>Tak</option>
-            <option>Nie</option>
-        </select>
     </div>
 
     <button type="submit">Wyślij formularz</button>
